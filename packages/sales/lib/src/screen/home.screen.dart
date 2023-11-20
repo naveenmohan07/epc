@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sales/src/controllers/home.controller.dart';
+import 'package:sales/src/services/home.service.dart';
+import 'package:sales/src/types/home.type.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/controllers/home.controller.dart';
-import 'package:user/src/services/home.service.dart';
-import 'package:user/src/types/home.type.dart';
 
 final homeService = HomeService();
 
@@ -29,18 +29,16 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-          child: Obx(() {
-            if(_hc.postStatus.value == API_STATUS.loading) {
-              return CircularProgressIndicator();
-            }
-            else if(_hc.postStatus.value == API_STATUS.success) {
-              return Text("POST => ${_hc.post.value.title}");
-            } else {
-              return Text("ERROR");
-            }
-          })
-        ),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Obx(() {
+              if (_hc.postStatus.value == API_STATUS.loading) {
+                return CircularProgressIndicator();
+              } else if (_hc.postStatus.value == API_STATUS.success) {
+                return Text("POST => ${_hc.post.value.title}");
+              } else {
+                return Text("ERROR");
+              }
+            })),
       ),
     );
   }

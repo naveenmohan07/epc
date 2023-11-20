@@ -13,9 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Future.delayed(
       const Duration(seconds: 5),
-      () => {
-        Get.toNamed("/user")
-      },
+      () => {Get.toNamed("/auth/login")},
     );
     super.initState();
   }
@@ -24,8 +22,8 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Please wait you will be landed to home screen shortly!!")
-      ),
+          child:
+              Text("Please wait you will be landed to home screen shortly!!")),
     );
   }
 }

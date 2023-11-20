@@ -1,9 +1,9 @@
 import 'dart:math';
 
 import 'package:get/get.dart';
+import 'package:sales/src/services/home.service.dart';
+import 'package:sales/src/types/home.type.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/services/home.service.dart';
-import 'package:user/src/types/home.type.dart';
 
 final logger = Logger(logName: "HomeController");
 

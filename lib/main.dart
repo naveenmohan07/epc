@@ -1,9 +1,10 @@
-import 'package:epc/apps/user.app.dart';
+import 'package:auth/auth.dart';
+import 'package:epc/apps/sales.app.dart';
 import 'package:epc/constants/app.route.constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:sales/sales.dart';
 import 'package:shared/shared.dart';
-import 'package:user/user.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,10 +31,12 @@ class _MainAppState extends State<MainApp> {
       initialRoute: SHARED_ROUTES.SPLASH_SCREEN,
       getPages: [
         ...SHARED_ROUTER.routes,
+        ...AUTH_ROUTER.routes,
         GetPage(
-            name: APP_ROUTES.USER,
-            page: () => const UserApp(),
-            children: USER_ROUTER.routes)
+          name: APP_ROUTES.SALES,
+          page: () => const SalesApp(),
+          children: SALES_ROUTER.routes,
+        )
       ],
     );
   }

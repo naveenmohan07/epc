@@ -10,6 +10,9 @@ export 'src/screens/permission.denied.screen.dart';
 export 'src/screens/splash.screen.dart';
 export 'src/screens/unauthorized.screen.dart';
 
+export 'src/widgets/app.input.widget.dart';
+export 'src/widgets/app.button.widget.dart';
+
 export 'src/constants/color.constant.dart';
 export 'src/constants/route.constant.dart';
 

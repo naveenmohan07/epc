@@ -4,6 +4,11 @@
 library;
 
 export 'src/auth_base.dart';
-export 'src/screen.dart';
+
+export 'src/constants/route.constant.dart';
+
+export 'src/routers/auth.router.dart';
+
+export 'src/screen/login.screen.dart';
 
 // TODO: Export any libraries intended for clients of this package.

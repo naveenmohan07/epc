@@ -34,8 +34,8 @@ dependencies:
     path: packages/auth
   shared:
     path: packages/shared
-  user:
-    path: packages/user
+  sales:
+    path: packages/sales
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

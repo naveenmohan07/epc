@@ -1,4 +1,4 @@
-import 'package:user/user.dart';
+import 'package:sales/sales.dart';
 
 void main() {
   var awesome = Awesome();

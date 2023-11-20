@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:user/user.dart';
+import 'package:sales/sales.dart';
 
 // final logger = Logger(logName: "User_App");
 
-class UserApp extends StatefulWidget {
-  const UserApp({super.key});
+class SalesApp extends StatefulWidget {
+  const SalesApp({super.key});
 
   @override
-  State<UserApp> createState() => _UserAppState();
+  State<SalesApp> createState() => _SalesAppState();
 }
 
-class _UserAppState extends State<UserApp> {
+class _SalesAppState extends State<SalesApp> {
   @override
   void initState() {
     super.initState();
@@ -25,10 +25,7 @@ class _UserAppState extends State<UserApp> {
           title: const Text("User"),
         ),
         body: const TabBarView(
-          children: [
-            HomeScreen(),
-            ProfileScreen()
-          ],
+          children: [HomeScreen(), ProfileScreen()],
         ),
         bottomNavigationBar: const TabBar(
           labelColor: Colors.teal,
